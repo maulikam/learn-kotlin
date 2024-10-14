@@ -1,3 +1,4 @@
+import kotlin.properties.Delegates
 
 class Car (private var name: String,
            private var model: String,
@@ -47,4 +48,20 @@ class Person (var firstName: String, var lastName: String, var age:Int) {
 }
 
 class Room (var roomId: Int, var roomName:String, var roomCapacity: Int = 0, var floorNo: Int = 0) {
+}
+
+class Building(var name: String, var hight: Int, var address: String) {
+    // initialise it later
+    lateinit var pincode: String
+    var barcode by Delegates.notNull<Int>()
+}
+
+// companion object
+class Calculator() {
+
+    companion object {
+        fun sum(a: Int, b: Int): Int {
+            return a + b
+        }
+    }
 }

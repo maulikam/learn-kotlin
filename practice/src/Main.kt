@@ -13,5 +13,10 @@
         println(user.name)
 
         var room = Room(0, "Vayu")
+
+        var calculator = Calculator()
+
+
+        println(Calculator.sum(12, 12))
     }
 
