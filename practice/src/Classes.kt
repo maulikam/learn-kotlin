@@ -45,3 +45,6 @@ class Person (var firstName: String, var lastName: String, var age:Int) {
     constructor(firstName: String, lastName: String) : this(firstName, lastName, 0)
 
 }
+
+class Room (var roomId: Int, var roomName:String, var roomCapacity: Int = 0, var floorNo: Int = 0) {
+}

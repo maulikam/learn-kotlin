@@ -11,5 +11,7 @@
         user = User("dave", "maulik", 33)
         println(user.toString())
         println(user.name)
+
+        var room = Room(0, "Vayu")
     }
 
