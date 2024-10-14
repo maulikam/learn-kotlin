@@ -6,6 +6,10 @@
 
         var user = User("Maulik", "Dave", 33)
         println(user.toString())
+        println(user.name)
 
+        user = User("dave", "maulik", 33)
+        println(user.toString())
+        println(user.name)
     }
 

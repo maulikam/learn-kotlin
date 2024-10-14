@@ -38,3 +38,10 @@ class User (name: String, var lastName: String, var age: Int) {
     }
 
 }
+
+class Person (var firstName: String, var lastName: String, var age:Int) {
+    // secondary constructor
+    constructor(firstName: String) : this(firstName, "", 0)
+    constructor(firstName: String, lastName: String) : this(firstName, lastName, 0)
+
+}
