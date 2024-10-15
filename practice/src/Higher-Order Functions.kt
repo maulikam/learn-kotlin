@@ -18,4 +18,23 @@ fun add(a:Int, b:Int) : Int {
 fun main() {
     val result = calculate(5, 10, ::add)
     println(result)
+
+    val addOperation = operation("add")
+    val subtractOperation = operation("sub")
+    val multiplyOperation = operation("mul")
+
+    println(addOperation(10, 20))
+    println(subtractOperation(10, 20))
+    println(multiplyOperation(10, 20))
 }
+
+// Example 2: Returning a Function
+fun operation(type:String):(Int, Int) -> Int {
+    return when (type) {
+        "add" -> {a, b -> a+b}
+        "sub" -> {a, b -> a- b}
+        else -> {a, b -> 0}
+    }
+}
+
+
